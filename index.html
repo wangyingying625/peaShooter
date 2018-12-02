@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.11.1.min.js"></script>
+</head>
+<style>
+    #div1{
+        border: 1em solid #000;
+    }
+    img{
+        cursor: pointer;
+    }
+</style>
+<body>
+<div id="div1">
+
+</div>
+</body>
+<script>
+    var change=prompt();
+    function xiuGai() {
+        var xhr=new XMLHttpRequest();
+        xhr.open('get','003.php?ch='+change);
+        xhr.onload=function () {
+            alert(xhr.responseText);
+        }
+        xhr.send(null);
+    }
+</script>
+</html>

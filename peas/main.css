@@ -1,0 +1,153 @@
+@charset "UTF-8";
+body,div,img,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin: 0;padding: 0;}
+input,img{border:0; outline: none; margin: 0; padding: 0;}
+ul,ol{list-style: none}
+fieldset, img, input,button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+input{padding-bottom: 0; padding-top: 0;}
+select,input{vertical-align:middle}
+select,input,textarea{font-size: 12px; margin: 0;}
+textarea{resize: none;}
+img{border:0; vertical-align: middle;}
+table{border-collapse: collapse;}
+body{
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color: #666;
+    background: #FFFFFF;
+}
+a{color: #666;text-decoration: none}
+h1,h2,h3,h4,h5,h6{text-decoration: none; font-weight: normal;}
+s,i,em{font-style: normal;text-decoration: none;}
+.w{
+    width:100%;
+    background-color: #FFFFFF;
+    margin:0 auto;}
+.fl{
+    float: left;}
+.fr{float: right;}
+#he{
+    padding-top: 2em;
+    width: 100%;
+    height: 24em;
+    background-color: #AAE67F;
+    padding-right: 3em;
+}
+#head{
+    background: url("images/Rectangle 4.png") no-repeat;
+    background-size: 100%;
+    text-align: center;
+    width: 24em;
+    height: 3em;
+    line-height: 3em;
+}
+#green{
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #00CC00;
+    border-radius: 0.7em;
+    display: inline-block;
+}
+#content{
+    width: 100%;
+    clear: right;
+    height: auto;
+    padding-top: 1.5em;
+    position: relative;
+    margin: 0 auto;
+}
+#img img{
+    width: 11.7em;
+    height: 14.9em;
+
+}
+#content #img{
+
+    display: inline-block;
+    position: absolute;
+    top:1.5em;
+}
+#content #rect{
+    width: 18em;
+    height:13em;
+    background: url("images/Rectangle 2.png") no-repeat;
+    background-size: 100%;
+  /*  background-color: #DFFCCA;
+    border-radius: 2em;
+      display: inline-block;*/
+    position:absolute;
+    top:3em;
+    line-height: 8em;
+    left: 10.5em;
+}
+p{
+    font-size: 1.5em;
+    color: #8B9E7C;
+    text-align: center;
+}
+/*#content #jiao{
+    width: 0;
+    height:0;
+    border: 2.5em transparent solid;
+    border-right-color: #DFFCCA;
+    position: absolute;
+    top:5em;
+    left: 8em;
+}*/
+#soil{
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 3em;
+}
+#soil #te{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3em;
+}
+#te h1{
+    color: #7AA65A;
+}
+#te h5{
+    color: #C5D1BD;
+}
+  #progreess{
+    clear: both;
+    width: 16em;
+    height: 16em;
+    line-height:19.5em;
+    top: 13em;
+    left: -1em;
+    margin:2em auto;
+     border: 2px solid #C8E3B4;
+     background-image:url("images/Oval 21 Copy.png");
+     background-repeat:no-repeat;
+     background-size: 93%;
+     background-position:center 93%;
+    border-radius: 8em;
+     text-align: center;
+
+}
+ #progreess p{
+     z-index: 100;
+     font-size: 4em;
+     color: #fff;
+ }
+ #weater{
+    width: 10em;
+    height: 2.3em;
+    border-radius: 5em;
+    background-color:#AAE67F;
+     margin: 0 auto;
+    color: #fff;
+     font-size: 23px;
+}
+h3{
+    display: inline;
+    font-size: 1.5em;
+    color: #E9F1E2;
+}
+

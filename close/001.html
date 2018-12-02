@@ -1,0 +1,14 @@
+<HTML>
+<HEAD>
+    <title>test</title>
+</HEAD>
+<body onbeforeunload="RunOnBeforeUnload()" onunload="RunOnUnload()">
+<script language="javascript">
+    window.onbeforeunload=function() {
+        var xhr=new XMLHttpRequest();
+        xhr.open('get','test.php?start=<?php echo $starttime?>');
+        xhr.send(null);
+    }
+</script>
+</body>
+</HTML>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <script src="jq/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <title>豌豆射手</title>
+</head>
+<body class="w">
+<div id="he">
+    <div id="head" class="fr">
+        <h3>Air Quality Condition &nbsp;</h3>
+        <div id="green"></div>
+    </div>
+<div id="content">
+    <div id="img"><img src="images/pshooter.png " width="276" height="332"></div>
+   <!-- <div id="jiao"></div>-->
+    <div id="rect" >
+        <p>啊,渴死我了</p>
+    </div>
+</div>
+</div>
+    <div id="soil">
+        <div id="te">
+            <h1>Soil Moisture</h1><br>
+            <h5>Normal range:58~80</h5>
+            <div id="progreess">
+                <p>69</p>
+            </div>
+        </div>
+    <button id="weater">为我浇水</button>
+    </div>
+
+</body>
+<script>
+    var oPr=document.getElementById("#progress");
+    var oBut=document.getElementById("water");
+    function cha() {
+        var xhr=new XMLHttpRequest();
+        xhr.open('get','003.php');
+        xhr.onload=function () {
+            if(xhr.responseText<58||xhr.responseText>80)
+            {
+                oPr.style.borderColor="#FCDEDB";
+                oPr.style.backgroundImage="url(images/Oval 21Copy(2).png)";
+                oBut.style.backgroundColor="#FFB6B0";
+            }
+        }
+        xhr.send(null);
+    }
+    window.onload=function () {
+        setInterval("cha()",1000);
+    }
+
+</script>
+</html>
